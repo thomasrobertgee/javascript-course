@@ -40,7 +40,7 @@ console.log(lastName)
 alert(lastName)
 
 */
-
+//////////////////////////////////////////////
 // Lecture: operators
 
 // var now = 2017
@@ -89,6 +89,7 @@ alert(lastName)
 //   console.log('Something to 2...')
 // } // false
 
+//////////////////////////////////////////////
 // Lecture: boolean logic and switch
 
 // var age = 20
@@ -120,6 +121,7 @@ alert(lastName)
 //     console.log('John does something else.')
 // }
 
+//////////////////////////////////////////////
 // coding challenge
 
 // var johnHeight = 170
@@ -150,6 +152,7 @@ alert(lastName)
 //   console.log('It\'s a draw!')
 // }
 
+//////////////////////////////////////////////
 // Lecture: functions
 
 // function calculateAge(yearOfBirth) {
@@ -180,6 +183,7 @@ alert(lastName)
 // yearsUntilRetirement('Mike', 1970)
 // yearsUntilRetirement('Mary', 1938)
 
+//////////////////////////////////////////////
 // Lecture: statements and expressions
 
 // expressions
@@ -219,6 +223,7 @@ alert(lastName)
 //   console.log('John is not a cop')
 // }
 
+//////////////////////////////////////////////
 // Lecture: Objects and properties
 
 // var john = {
@@ -249,6 +254,7 @@ alert(lastName)
 //
 // console.log(jane)
 
+//////////////////////////////////////////////
 // lecture: objects and methods
 
 // v1.0
@@ -275,32 +281,105 @@ alert(lastName)
 // console.log(john)
 
 //v2.0
-var john = {
-  name: 'John',
-  lastName: 'Smith',
-  yearOfBirth: 1990,
-  job: 'teacher',
-  isMarried: false,
-  family: ['Jane', 'Mark', 'Bob'],
-  calculateAge: function() {
-    this.age = 2016 - this.yearOfBirth
+// var john = {
+//   name: 'John',
+//   lastName: 'Smith',
+//   yearOfBirth: 1990,
+//   job: 'teacher',
+//   isMarried: false,
+//   family: ['Jane', 'Mark', 'Bob'],
+//   calculateAge: function() {
+//     this.age = 2016 - this.yearOfBirth
+//   }
+// }
+//
+// john.calculateAge()
+// console.log(john)
+//
+// var mike = {
+//   name: 'Mike',
+//   lastName: 'Smith',
+//   yearOfBirth: 1967,
+//   job: 'teacher',
+//   isMarried: false,
+//   family: ['Jane', 'Mark', 'Bob'],
+//   calculateAge: function() {
+//     this.age = 2016 - this.yearOfBirth
+//   }
+// }
+//
+// mike.calculateAge()
+// console.log(mike)
+
+//////////////////////////////////////////////
+// lecture: loops
+
+// for (var i = 0; i < 10; i++) {
+//   console.log(i)
+// }
+//
+var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob']
+//
+// for (var i = 0; i < names.length; i++) {
+//   console.log(names[i])
+// }
+//
+// console.log('names.length:', names.length)
+//
+// for (var i = names.length - 1; i >= 0; i--) {
+//   console.log(names[i])
+// }
+
+// var i = 0
+// while(i < names.length) {
+//   console.log(names[i])
+//   i++
+// }
+//
+// for (var i = 1; i <= 5; i++) {
+//   console.log(i)
+//
+//   if (i === 3) {
+//     break
+//   }
+// }
+//
+// for (var i = 1; i <= 5; i++) {
+//   if (i === 3) {
+//     continue
+//   }
+//
+//   console.log(i)
+// }
+
+
+/////////////////////////////////
+// coding challenge #2
+
+function printFullAge(years) {
+  var ages = []
+  var fullAges = []
+
+  for (var i = 0; i < years.length; i++ ) {
+    ages[i] = 2017 - years[i]
   }
+
+  for (i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+      console.log('Person', (i + 1), 'is', ages[i], 'years old, and is of full age.')
+      fullAges.push(true)
+    } else {
+      console.log('Person', (i + 1), 'is', ages[i], 'years old, and is NOT of full age.')
+      fullAges.push(false)
+    }
+  }
+  return fullAges
 }
 
-john.calculateAge()
-console.log(john)
+var years = [1978, 2003, 1990, 1995, 2009, 1984]
 
-var mike = {
-  name: 'Mike',
-  lastName: 'Smith',
-  yearOfBirth: 1967,
-  job: 'teacher',
-  isMarried: false,
-  family: ['Jane', 'Mark', 'Bob'],
-  calculateAge: function() {
-    this.age = 2016 - this.yearOfBirth
-  }
-}
+var full_1 = printFullAge(years)
+var full_2 = printFullAge([2012, 1915, 1999])
 
-mike.calculateAge()
-console.log(mike)
+console.log(full_1)
+console.log(full_2)
