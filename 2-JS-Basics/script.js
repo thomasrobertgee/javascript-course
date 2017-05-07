@@ -120,30 +120,73 @@ alert(lastName)
 //     console.log('John does something else.')
 // }
 
-var johnHeight = 170
-var tomHeight = 175
-var baxHeight = 183
+// coding challenge
 
-var johnAge = 70
-var tomAge = 25
-var baxAge = 23
+// var johnHeight = 170
+// var tomHeight = 175
+// var baxHeight = 183
+//
+// var johnAge = 70
+// var tomAge = 25
+// var baxAge = 23
+//
+// var multiplier = 90
+//
+// var johnScore = johnHeight + (johnAge * multiplier)
+// var tomScore = tomHeight + (tomAge * multiplier)
+// var baxScore = baxHeight + (baxAge * multiplier)
+//
+// console.log('Johns score = ' + johnScore)
+// console.log('Toms score = ' + tomScore)
+// console.log('Baxters score = ' + baxScore)
+//
+// if (tomScore > johnScore && tomScore > baxScore ) {
+//   console.log('Tom wins with ' + tomScore + ' points.')
+// } else if (johnScore > tomScore && johnScore >  baxScore) {
+//   console.log('John wins with ' + johnScore + ' points.')
+// } else if (baxScore > tomScore && baxScore > johnScore) {
+//   console.log('Baxter wins with ' + baxScore + ' points.')
+// } else {
+//   console.log('It\'s a draw!')
+// }
 
-var multiplier = 90
+// Lecture: functions
 
-var johnScore = johnHeight + (johnAge * multiplier)
-var tomScore = tomHeight + (tomAge * multiplier)
-var baxScore = baxHeight + (baxAge * multiplier)
+// function calculateAge(yearOfBirth) {
+//   var age = 2016 - yearOfBirth
+//   return age
+// }
+//
+// var ageJohn = calculateAge(1990)
+// var ageMike = calculateAge(1968)
+// var ageMary = calculateAge(1939)
+//
+// console.log(ageJohn)
+// console.log(ageMike)
+// console.log(ageMary)
+//
+// function yearsUntilRetirement(name, year) {
+//   var age = calculateAge(year)
+//   var retirement = 65 - age
+//
+//   if (retirement >= 0) {
+//     console.log(name,'retires in', retirement, 'years.')
+//   } else {
+//     console.log(name, 'has already retired.')
+//   }
+// }
+//
+// yearsUntilRetirement('John', 1990)
+// yearsUntilRetirement('Mike', 1970)
+// yearsUntilRetirement('Mary', 1938)
 
-console.log('Johns score = ' + johnScore)
-console.log('Toms score = ' + tomScore)
-console.log('Baxters score = ' + baxScore)
+// Lecture: statements and expressions
 
-if (tomScore > johnScore && tomScore > baxScore ) {
-  console.log('Tom wins with ' + tomScore + ' points.')
-} else if (johnScore > tomScore && johnScore >  baxScore) {
-  console.log('John wins with ' + johnScore + ' points.')
-} else if (baxScore > tomScore && baxScore > johnScore) {
-  console.log('Baxter wins with ' + baxScore + ' points.')
-} else {
-  console.log('It\'s a draw!')
+// expressions
+3 + 4
+var x = 3
+
+// statements
+if (x === 5 ) {
+  // do something
 }
